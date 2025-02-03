@@ -81,7 +81,7 @@
         var baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
 
         // タイルマップを追加
-        L.tileLayer(./{z}/{x}/{y}.jpg, {
+        L.tileLayer(baseUrl + '/{z}/{x}/{y}.jpg', {
             maxZoom: 15,
             minZoom: 11,
             attribution: '© Your Map Provider'
